@@ -1,0 +1,22 @@
+ example
+4.
+4.
+4.
+4.
+4.
+4.
+4.
+4.
+ РїСЂРёРјРµСЂ;
+ pics_for_ind_789\unknown.png;
+ random
+2.
+2.
+2.
+2.
+2.
+2.
+2.
+2.
+ pics_for_ind_789//unknown.png;
+ рандом;

@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ahtoh/ontologies/2020/11/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ahtoh/ontologies/2020/11/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/ahtoh/ontologies/2020/11/untitled-ontology-7"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Директор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Прибыль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Склад"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Товары"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Находится_под_управлением"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Определяет"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Содержит"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Влияет_на_прибыль"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Зарплата"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Коэффициенты"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Прибыль"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Прибыль_Гастрономия"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Прибыль_стройтовары"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Стоимость"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Стоимость_десертов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#прибыль_десерты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гастрономия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Десерты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Прибыль_гастрономия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Прибыль_десерты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Прибыль_стройтовары"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стройтовары"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Директор"/>
+        <Class IRI="#Склад"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Прибыль"/>
+        <Class IRI="#Склад"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Товары"/>
+        <Class IRI="#Склад"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Товары"/>
+        <NamedIndividual IRI="#Гастрономия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Товары"/>
+        <NamedIndividual IRI="#Десерты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Директор"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Директор"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прибыль"/>
+        <NamedIndividual IRI="#Прибыль_гастрономия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прибыль"/>
+        <NamedIndividual IRI="#Прибыль_десерты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прибыль"/>
+        <NamedIndividual IRI="#Прибыль_стройтовары"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Директор"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Товары"/>
+        <NamedIndividual IRI="#Стройтовары"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <NamedIndividual IRI="#Прибыль_гастрономия"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <NamedIndividual IRI="#Прибыль_десерты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <NamedIndividual IRI="#Прибыль_стройтовары"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <NamedIndividual IRI="#Прибыль_гастрономия"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <NamedIndividual IRI="#Прибыль_десерты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <NamedIndividual IRI="#Прибыль_стройтовары"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <NamedIndividual IRI="#Прибыль_гастрономия"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <NamedIndividual IRI="#Прибыль_десерты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Определяет"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <NamedIndividual IRI="#Прибыль_стройтовары"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+        <NamedIndividual IRI="#Гастрономия"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Стоимость_десертов"/>
+        <NamedIndividual IRI="#Десерты"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Прибыль_Гастрономия"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Прибыль_стройтовары"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#прибыль_десерты"/>
+        <NamedIndividual IRI="#Иванов_А_А"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <NamedIndividual IRI="#Пименов_Б_Б"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <NamedIndividual IRI="#Смирнов_Ц_Ц"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+        <NamedIndividual IRI="#Стройтовары"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Находится_под_управлением"/>
+        <Class IRI="#Склад"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Определяет"/>
+        <Class IRI="#Директор"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Определяет"/>
+        <Class IRI="#Товары"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Содержит"/>
+        <Class IRI="#Склад"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Находится_под_управлением"/>
+        <Class IRI="#Директор"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Определяет"/>
+        <Class IRI="#Прибыль"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Содержит"/>
+        <Class IRI="#Товары"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <DataProperty IRI="#Коэффициенты"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <DataProperty IRI="#Коэффициенты"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <DataProperty IRI="#Коэффициенты"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Прибыль_Гастрономия"/>
+        <DataProperty IRI="#Прибыль"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Прибыль_стройтовары"/>
+        <DataProperty IRI="#Прибыль"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+        <DataProperty IRI="#Стоимость"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Стоимость_десертов"/>
+        <DataProperty IRI="#Стоимость"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+        <DataProperty IRI="#Стоимость"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#прибыль_десерты"/>
+        <DataProperty IRI="#Прибыль"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Влияет_на_прибыль"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Зарплата"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Стоимость_десертов"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Влияет_на_прибыль"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Зарплата"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Прибыль"/>
+        <Class IRI="#Директор"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+        <Class IRI="#Товары"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Стоимость_десертов"/>
+        <Class IRI="#Товары"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+        <Class IRI="#Товары"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Влияет_на_прибыль"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Зарплата"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Коэффициент_реализации_гастрономии"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Коэффициент_реализации_десертов"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Коэффициент_реализации_стройматериалов"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Прибыль"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Стоимость_гастрономии"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Стоимость_десертов"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Стоимость_стройматериалов"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
